@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Scapelute — Websites for HVAC &amp; Plumbing Contractors</title>
+  <meta name="description" content="Scapelute builds fast, mobile-first, Google-ready websites for HVAC and plumbing contractors. Delivered in 5–10 days. You only pay if you love it." />
+
+  <!-- Open Graph -->
+  <meta property="og:type"        content="website" />
+  <meta property="og:url"         content="{{SITE_URL}}" />
+  <meta property="og:title"       content="Scapelute — Websites That Make Your Phone Ring" />
+  <meta property="og:description" content="Fast, Google-ready websites for HVAC &amp; plumbing contractors. Delivered in 5–10 days. One repair job pays for the whole thing." />
+
+  <!-- JSON-LD: LocalBusiness + Service -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "ProfessionalService",
+        "name": "Scapelute",
+        "description": "Web design agency building fast, Google-ready websites for HVAC and plumbing contractors across the United States.",
+        "url": "{{SITE_URL}}",
+        "email": "hello@scapelute.com",
+        "areaServed": { "@type": "Country", "name": "United States" },
+        "priceRange": "$700–$1,500"
+      },
+      {
+        "@type": "Service",
+        "name": "Contractor Website",
+        "provider": { "@type": "ProfessionalService", "name": "Scapelute" },
+        "description": "Mobile-first, SEO-optimized website for HVAC and plumbing contractors, delivered in 5–10 days.",
+        "offers": {
+          "@type": "AggregateOffer",
+          "priceCurrency": "USD",
+          "lowPrice": "700",
+          "highPrice": "1500"
+        }
+      }
+    ]
+  }
+  </script>
+
+  <!-- System font stack — no external font requests -->
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ── Navbar ── -->
+  <nav id="navbar">
+    <a href="#" class="nav-logo">Scape<span>lute</span></a>
+
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#demos">Demos</a></li>
+      <li><a href="#pricing">Pricing</a></li>
+      <li><a href="#process">Process</a></li>
+      <li><a href="#contact">Book a Call</a></li>
+    </ul>
+
+    <div class="nav-right">
+      <!-- PHONE: re-add tel: link here when US number is ready -->
+      <a href="{{CALENDLY_URL}}" class="nav-cta" target="_blank" rel="noopener">Book a Free Call</a>
+      <button class="nav-hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ── Hero ── -->
+  <section id="hero">
+    <div class="hero-art" aria-hidden="true"></div>
+    <div class="hero-content">
+      <p class="hero-eyebrow">HVAC &amp; Plumbing Websites</p>
+      <h1 class="hero-title" aria-label="Websites That Make Your Phone Ring.">
+        <span class="hero-line-wrap"><span class="hero-line go d1">Websites That</span></span>
+        <span class="hero-line-wrap"><span class="hero-line go d2">Make Your</span></span>
+        <span class="hero-line-wrap"><span class="hero-line go d3 hero-accent">Phone Ring.</span></span>
+      </h1>
+      <p class="hero-sub">We build fast, Google-ready websites for HVAC &amp; plumbing companies. One extra repair job pays for the whole thing.</p>
+      <div class="hero-actions">
+        <a href="#demos" class="btn-gold">See a Live Demo</a>
+        <a href="{{CALENDLY_URL}}" class="btn-outline" target="_blank" rel="noopener">Book a Free Call</a>
+      </div>
+      <p class="hero-trust">Delivered in 5–10 days &nbsp;•&nbsp; Mobile-first &nbsp;•&nbsp; You only pay if you love it</p>
+    </div>
+  </section>
+
+  <!-- ── Stats Bar ── -->
+  <div class="stats-bar" role="region" aria-label="Industry statistics">
+    <div class="stat-item">
+      <span class="stat-num">87%</span>
+      <span class="stat-lbl">of HVAC &amp; plumbing contractors are invisible in AI search</span>
+    </div>
+    <div class="stat-div" aria-hidden="true"></div>
+    <div class="stat-item">
+      <span class="stat-num">$1,205</span>
+      <span class="stat-lbl">average HVAC repair ticket — one job covers your site</span>
+    </div>
+    <div class="stat-div" aria-hidden="true"></div>
+    <div class="stat-item">
+      <span class="stat-num">70–80%</span>
+      <span class="stat-lbl">of plumbing calls are urgent — they call the first credible result</span>
+    </div>
+    <div class="stat-div" aria-hidden="true"></div>
+    <div class="stat-item">
+      <span class="stat-num">40%</span>
+      <span class="stat-lbl">of inbound calls driven by a single service-area page</span>
+    </div>
+  </div>
+
+  <!-- ── Demos ── -->
+  <section id="demos">
+    <div class="section-header reveal">
+      <p class="section-label">Live Demos</p>
+      <h2 class="section-title">See exactly what <em>you'd get</em></h2>
+      <div class="divider"></div>
+    </div>
+
+    <div class="demos-grid">
+
+      <!-- HVAC Demo -->
+      <div class="demo-card reveal">
+        <div class="demo-preview">
+          <div class="demo-preview-chrome" aria-hidden="true">
+            <span></span><span></span><span></span>
+          </div>
+          <div class="demo-preview-content" aria-hidden="true">
+            <div class="demo-line demo-line-nav"></div>
+            <div class="demo-line demo-line-hero"></div>
+            <div class="demo-line demo-line-sub"></div>
+            <div class="demo-line demo-line-btn"></div>
+          </div>
+          <svg class="demo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"/></svg>
+          <span class="demo-tag">HVAC</span>
+        </div>
+        <div class="demo-body">
+          <h3 class="demo-name">HVAC Contractor Demo</h3>
+          <p class="demo-desc">Emergency call CTA front and center. Service-area pages. Google Maps. Built to rank for "AC repair near me."</p>
+          <a href="{{HVAC_DEMO_URL}}" class="btn-gold" target="_blank" rel="noopener">View Live Site</a>
+        </div>
+      </div>
+
+      <!-- Plumbing Demo -->
+      <div class="demo-card reveal reveal-d1">
+        <div class="demo-preview">
+          <div class="demo-preview-chrome" aria-hidden="true">
+            <span></span><span></span><span></span>
+          </div>
+          <div class="demo-preview-content" aria-hidden="true">
+            <div class="demo-line demo-line-nav"></div>
+            <div class="demo-line demo-line-hero"></div>
+            <div class="demo-line demo-line-sub"></div>
+            <div class="demo-line demo-line-btn"></div>
+          </div>
+          <svg class="demo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22a7 7 0 0 0 7-7c0-2-1-3.9-3-5.5s-3.5-4-4-6.5c-.5 2.5-2 4.9-4 6.5C6 11.1 5 13 5 15a7 7 0 0 0 7 7z"/></svg>
+          <span class="demo-tag">Plumbing</span>
+        </div>
+        <div class="demo-body">
+          <h3 class="demo-name">Plumbing Contractor Demo</h3>
+          <p class="demo-desc">Built for the 2am emergency search. Click-to-call prominent, 24/7 availability front and center, trust signals above the fold.</p>
+          <a href="{{PLUMBING_DEMO_URL}}" class="btn-gold" target="_blank" rel="noopener">View Live Site</a>
+        </div>
+      </div>
+
+      <!-- Moe Da Barber Studios — delivered client -->
+      <div class="demo-card reveal reveal-d2">
+        <div class="demo-preview demo-preview-delivered">
+          <div class="demo-preview-chrome" aria-hidden="true">
+            <span></span><span></span><span></span>
+          </div>
+          <div class="demo-preview-content" aria-hidden="true">
+            <div class="demo-line demo-line-nav"></div>
+            <div class="demo-line demo-line-hero"></div>
+            <div class="demo-line demo-line-sub"></div>
+            <div class="demo-line demo-line-btn"></div>
+          </div>
+          <svg class="demo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="6" cy="6" r="3"/><path d="M8.12 8.12 12 12"/><path d="M20 4 8.12 15.88"/><circle cx="6" cy="18" r="3"/><path d="M14.8 14.8 20 20"/></svg>
+          <span class="demo-tag demo-tag-live">Delivered</span>
+        </div>
+        <div class="demo-body">
+          <h3 class="demo-name">Moe Da Barber Studios</h3>
+          <p class="demo-desc">London, UK. Booking-ready site delivered in 7 days. Appointments doubled in the first month after launch.</p>
+          <a href="{{MOE_SITE_URL}}" class="btn-outline" target="_blank" rel="noopener">View Live Site</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ── ROI Section ── -->
+  <section id="roi">
+    <div class="section-header reveal">
+      <p class="section-label">The Math</p>
+      <h2 class="section-title">It pays for itself <em>on job one.</em></h2>
+      <div class="divider"></div>
+    </div>
+    <div class="roi-wrap reveal">
+      <div class="roi-grid">
+        <div class="roi-item">
+          <span class="roi-label">Your website. One-time.</span>
+          <span class="roi-amount roi-cost">$1,200</span>
+        </div>
+        <div class="roi-connector" aria-hidden="true">vs</div>
+        <div class="roi-item">
+          <span class="roi-label">One HVAC repair ticket.</span>
+          <span class="roi-amount roi-win">$1,205</span>
+        </div>
+        <div class="roi-connector roi-plus" aria-hidden="true">+</div>
+        <div class="roi-item">
+          <span class="roi-label">One system install.</span>
+          <span class="roi-amount roi-win">$5,000–$12,000</span>
+        </div>
+      </div>
+      <p class="roi-conclusion">One call from Google covers your site. Every call after that is pure margin.</p>
+      <a href="{{CALENDLY_URL}}" class="btn-gold" target="_blank" rel="noopener">Book a Free Call</a>
+    </div>
+  </section>
+
+  <!-- ── Process ── -->
+  <section id="process">
+    <div class="section-header reveal">
+      <p class="section-label">How It Works</p>
+      <h2 class="section-title">Live in <em>5–10 days.</em></h2>
+      <div class="divider"></div>
+    </div>
+    <div class="process-steps">
+
+      <div class="process-step reveal">
+        <div class="step-num">01</div>
+        <div class="step-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+        </div>
+        <h3 class="step-title">We show you a finished demo — free</h3>
+        <p class="step-desc">You see a real, working website built for your industry before you spend a dollar. No commitment, no pressure.</p>
+      </div>
+
+      <div class="process-step reveal reveal-d1">
+        <div class="step-num">02</div>
+        <div class="step-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+        </div>
+        <h3 class="step-title">You approve &amp; pay 50% deposit</h3>
+        <p class="step-desc">Like what you see? We customize it to your business — your name, services, cities, and phone number. You pay 50% only after you're happy with the demo.</p>
+      </div>
+
+      <div class="process-step reveal reveal-d2">
+        <div class="step-num">03</div>
+        <div class="step-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+        </div>
+        <h3 class="step-title">We deliver in 5–10 days</h3>
+        <p class="step-desc">We build, you review, we refine. Fast turnaround without cutting corners. Most clients go live in under two weeks from deposit.</p>
+      </div>
+
+      <div class="process-step reveal reveal-d3">
+        <div class="step-num">04</div>
+        <div class="step-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 0 20M12 2a15.3 15.3 0 0 0 0 20"/></svg>
+        </div>
+        <h3 class="step-title">You go live + optional Google growth</h3>
+        <p class="step-desc">Your site is live. Add hosting &amp; maintenance for $40–$80/mo, or our Google Growth plan at $300–$500/mo to start showing up in Maps and local search.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ── Pricing ── -->
+  <section id="pricing">
+    <div class="section-header reveal">
+      <p class="section-label">Pricing</p>
+      <h2 class="section-title">Straight-up prices. <em>No surprises.</em></h2>
+      <div class="divider"></div>
+    </div>
+
+    <div class="pricing-grid">
+
+      <div class="price-card reveal">
+        <div class="price-tier-label">Hosting &amp; Maintenance</div>
+        <div class="price-amount">$40–$80</div>
+        <div class="price-period">per month</div>
+        <div class="price-divider"></div>
+        <ul class="price-features">
+          <li>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            Fast, reliable hosting
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            Monthly content updates
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            Security monitoring
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            We handle the tech, you focus on jobs
+          </li>
+        </ul>
+        <a href="{{CALENDLY_URL}}" class="btn-outline btn-full" target="_blank" rel="noopener">Book a Free Call</a>
+      </div>
+
+      <div class="price-card price-popular reveal reveal-d1">
+        <span class="popular-tag">Most Popular</span>
+        <div class="price-tier-label">Website</div>
+        <div class="price-amount">$700–$1,500</div>
+        <div class="price-period">one-time payment</div>
+        <div class="price-divider"></div>
+        <ul class="price-features">
+          <li>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            Mobile-first design
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            Click-to-call on every page
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            Google Maps &amp; SEO ready
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            Service-area pages
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            Contact form
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            Delivered in 5–10 days
+          </li>
+        </ul>
+        <a href="{{CALENDLY_URL}}" class="btn-gold btn-full" target="_blank" rel="noopener">Book a Free Call</a>
+      </div>
+
+      <div class="price-card reveal reveal-d2">
+        <div class="price-tier-label">Google Growth</div>
+        <div class="price-amount">$300–$500</div>
+        <div class="price-period">per month</div>
+        <div class="price-divider"></div>
+        <ul class="price-features">
+          <li>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            Google Business Profile optimization
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            Service-area page expansion
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            Local SEO — show up in Maps
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            Monthly performance report
+          </li>
+        </ul>
+        <a href="{{CALENDLY_URL}}" class="btn-outline btn-full" target="_blank" rel="noopener">Book a Free Call</a>
+      </div>
+
+    </div>
+
+    <p class="pricing-note reveal">No payment links on this page. After our call we send a secure invoice to your email — pay by card or bank transfer.</p>
+  </section>
+
+  <!-- ── FAQ ── -->
+  <section id="faq">
+    <div class="section-header reveal">
+      <p class="section-label">FAQ</p>
+      <h2 class="section-title">Quick answers.</h2>
+      <div class="divider"></div>
+    </div>
+
+    <div class="faq-list" role="list">
+
+      <details class="faq-item reveal">
+        <summary class="faq-q">
+          How fast will my site be delivered?
+          <svg class="faq-chevron" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+        </summary>
+        <p class="faq-a">Most sites are live within 5–10 business days from when you approve the demo and put down your deposit. Simple single-page sites can be done in 3–5 days.</p>
+      </details>
+
+      <details class="faq-item reveal reveal-d1">
+        <summary class="faq-q">
+          What if I don't like it?
+          <svg class="faq-chevron" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+        </summary>
+        <p class="faq-a">You see a finished demo before you pay a cent. The 50% deposit only happens after you've reviewed and approved what we've built. If you're not happy, you don't pay — it's that simple.</p>
+      </details>
+
+      <details class="faq-item reveal reveal-d2">
+        <summary class="faq-q">
+          Do you handle hosting?
+          <svg class="faq-chevron" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+        </summary>
+        <p class="faq-a">Yes. Our hosting &amp; maintenance plan covers fast reliable hosting, security, and monthly updates for $40–$80/month. We handle the tech — you focus on your jobs.</p>
+      </details>
+
+      <details class="faq-item reveal reveal-d1">
+        <summary class="faq-q">
+          How do I pay?
+          <svg class="faq-chevron" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+        </summary>
+        <p class="faq-a">After we agree on scope during our free call, we send a secure invoice to your email. You pay by card or bank transfer. No payment links on this website.</p>
+      </details>
+
+      <details class="faq-item reveal reveal-d2">
+        <summary class="faq-q">
+          Do you work with companies outside my city?
+          <svg class="faq-chevron" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+        </summary>
+        <p class="faq-a">Yes — we work with HVAC and plumbing contractors across the US. Everything is done remotely. Most clients never need an in-person meeting.</p>
+      </details>
+
+    </div>
+  </section>
+
+  <!-- ── Contact ── -->
+  <section id="contact">
+    <div class="contact-inner reveal">
+      <p class="section-label">Ready to Start?</p>
+      <h2 class="cta-title">Book a free 15-minute call.<br><em>No pitch. No pressure.</em></h2>
+      <p class="cta-sub">We'll walk you through a demo built for your industry. You'll see exactly what your site would look like before you decide anything.</p>
+      <div class="contact-actions">
+        <a href="{{CALENDLY_URL}}" class="btn-gold btn-big" target="_blank" rel="noopener">Book a Free Call</a>
+        <!-- PHONE: re-add tel: link here when US number is ready -->
+      </div>
+      <p class="contact-email">Or email us at <a href="mailto:hello@scapelute.com">hello@scapelute.com</a></p>
+    </div>
+  </section>
+
+  <!-- ── Footer ── -->
+  <footer>
+    <div class="footer-top">
+
+      <div class="footer-brand">
+        <a href="#" class="footer-logo">Scape<span>lute</span></a>
+        <p class="footer-tag">Websites for HVAC &amp; plumbing contractors. Fast, Google-ready, and built to make your phone ring.</p>
+        <!-- PHONE: re-add tel: link here when US number is ready -->
+        <a href="mailto:hello@scapelute.com" class="footer-contact-link">hello@scapelute.com</a>
+      </div>
+
+      <div class="footer-col">
+        <div class="footer-col-title">Navigate</div>
+        <ul>
+          <li><a href="#demos">Demos</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#process">Process</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#contact">Book a Call</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <div class="footer-col-title">Contact</div>
+        <ul>
+          <!-- PHONE: re-add tel: link here when US number is ready -->
+          <li><a href="mailto:hello@scapelute.com">hello@scapelute.com</a></li>
+          <li><a href="{{CALENDLY_URL}}" target="_blank" rel="noopener">Book a Free Call</a></li>
+        </ul>
+      </div>
+
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copy">&copy; 2026 Scapelute. All rights reserved.</p>
+      <p class="footer-copy">Websites for contractors who want their phone to ring.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
