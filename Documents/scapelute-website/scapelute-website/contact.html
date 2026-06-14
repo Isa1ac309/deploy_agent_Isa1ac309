@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — Scapelute</title>
+  <meta name="description" content="Get in touch with Scapelute. We build fast, Google-ready websites for HVAC and plumbing contractors." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ── Navbar ── -->
+  <nav id="navbar">
+    <a href="index.html" class="nav-logo">Scape<span>lute</span></a>
+
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html#demos">Demos</a></li>
+      <li><a href="pricing.html">Pricing</a></li>
+      <li><a href="index.html#process">Process</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+
+    <div class="nav-right">
+      <a href="#book" class="nav-cta">Book a Free Call</a>
+      <button class="nav-hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ── Contact Page ── -->
+  <main class="contact-page">
+    <div class="contact-split">
+
+      <!-- Left: heading + details -->
+      <div class="contact-split-left">
+        <p class="section-label">Get In Touch</p>
+        <h1 class="contact-page-title">Let's talk about your website.</h1>
+        <p class="contact-page-sub">Fill in the form and we'll get back to you within 24 hours — with ideas, a live demo, or just an honest conversation about what your business needs.</p>
+
+        <div class="contact-details">
+          <a href="mailto:hello@scapelute.com" class="contact-detail-item">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+            hello@scapelute.com
+          </a>
+          <a href="https://wa.me/15551234567" class="contact-detail-item" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+            WhatsApp us
+          </a>
+        </div>
+      </div>
+
+      <!-- Right: tabbed panel -->
+      <div class="contact-split-right">
+
+        <!-- Tab buttons -->
+        <div class="contact-tabs" role="tablist" aria-label="Contact options">
+          <button class="contact-tab-btn active" role="tab" aria-selected="true"
+                  aria-controls="tab-message" id="tab-btn-message">
+            Send a Message
+          </button>
+          <button class="contact-tab-btn" role="tab" aria-selected="false"
+                  aria-controls="tab-book" id="tab-btn-book">
+            Book a Call
+          </button>
+        </div>
+
+        <!-- Tab 1: Contact form -->
+        <div class="tab-panel active" id="tab-message" role="tabpanel" aria-labelledby="tab-btn-message">
+
+          <form id="contactForm" class="contact-form" novalidate>
+
+            <div class="form-group">
+              <label for="name">Your name</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                required
+                placeholder="John Smith"
+                autocomplete="name"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email address</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                required
+                placeholder="john@example.com"
+                autocomplete="email"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="business">Business type</label>
+              <select id="business" name="business" required>
+                <option value="" disabled selected>Select your industry</option>
+                <option value="Plumbing">Plumbing</option>
+                <option value="HVAC">HVAC</option>
+                <option value="Salon">Salon</option>
+                <option value="Restaurant">Restaurant</option>
+                <option value="Other">Other</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="message">What do you need?</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                required
+                placeholder="Tell us about your business and what you're looking for…"
+              ></textarea>
+            </div>
+
+            <button type="submit" class="btn-gold btn-full contact-submit">Send Message</button>
+
+          </form>
+
+          <div id="contactThankyou" class="contact-thankyou">
+            <div class="thankyou-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            <h2>Message received.</h2>
+            <p>We'll be in touch within 24 hours.</p>
+          </div>
+
+        </div>
+
+        <!-- Tab 2: Calendly booking -->
+        <div class="tab-panel" id="tab-book" role="tabpanel" aria-labelledby="tab-btn-book">
+          <div id="calendly-placeholder" style="min-height:500px; display:flex; align-items:center; justify-content:center; background:#f9f9f9; border-radius:12px; color:#888; font-size:15px;">
+            Calendly booking will appear here — replace with real embed code
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- ── Footer ── -->
+  <footer>
+    <div class="footer-top">
+
+      <div class="footer-brand">
+        <a href="index.html" class="footer-logo">Scape<span>lute</span></a>
+        <p class="footer-tag">Websites for HVAC &amp; plumbing contractors. Fast, Google-ready, and built to make your phone ring.</p>
+        <a href="mailto:hello@scapelute.com" class="footer-contact-link">hello@scapelute.com</a>
+      </div>
+
+      <div class="footer-col">
+        <div class="footer-col-title">Navigate</div>
+        <ul>
+          <li><a href="index.html#demos">Demos</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="index.html#process">Process</a></li>
+          <li><a href="index.html#faq">FAQ</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <div class="footer-col-title">Contact</div>
+        <ul>
+          <li><a href="mailto:hello@scapelute.com">hello@scapelute.com</a></li>
+          <li><a href="#book">Book a Free Call</a></li>
+        </ul>
+      </div>
+
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copy">&copy; 2026 Scapelute. All rights reserved.</p>
+      <p class="footer-copy">Websites for contractors who want their phone to ring.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    // ── Tab switching ──
+    (function () {
+      var tabBtns   = document.querySelectorAll('.contact-tab-btn');
+      var tabPanels = document.querySelectorAll('.tab-panel');
+
+      function activateTab(panelId) {
+        tabBtns.forEach(function (btn) {
+          var active = btn.getAttribute('aria-controls') === panelId;
+          btn.classList.toggle('active', active);
+          btn.setAttribute('aria-selected', String(active));
+        });
+        tabPanels.forEach(function (panel) {
+          panel.classList.toggle('active', panel.id === panelId);
+        });
+      }
+
+      tabBtns.forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          var panelId = this.getAttribute('aria-controls');
+          activateTab(panelId);
+          history.replaceState(null, '', panelId === 'tab-book' ? '#book' : location.pathname);
+        });
+      });
+
+      // Activate book tab when page loads with #book hash
+      if (window.location.hash === '#book') {
+        activateTab('tab-book');
+      }
+    }());
+
+    // ── Form submit ──
+    document.getElementById('contactForm').addEventListener('submit', function (e) {
+      e.preventDefault();
+      this.style.display = 'none';
+      document.getElementById('contactThankyou').style.display = 'block';
+    });
+  </script>
+</body>
+</html>

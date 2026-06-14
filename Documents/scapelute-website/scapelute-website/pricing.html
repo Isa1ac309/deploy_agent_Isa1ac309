@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pricing — Scapelute</title>
+  <meta name="description" content="Simple, transparent pricing for HVAC and plumbing contractor websites. One-time setup fee. Low monthly hosting. You only pay if you love it." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ── Navbar ── -->
+  <nav id="navbar">
+    <a href="index.html" class="nav-logo">Scape<span>lute</span></a>
+
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html#demos">Demos</a></li>
+      <li><a href="pricing.html" class="active">Pricing</a></li>
+      <li><a href="index.html#process">Process</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+
+    <div class="nav-right">
+      <!-- PHONE: re-add tel: link here when US number is ready -->
+      <a href="contact.html#book" class="nav-cta" target="_blank" rel="noopener">Book a Free Call</a>
+      <button class="nav-hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ── Pricing Hero ── -->
+  <section id="pricing-hero" class="pricing-hero">
+    <div class="pricing-hero-inner">
+      <p class="hero-eyebrow" style="opacity:1;animation:none;">Transparent Pricing</p>
+      <h1 class="pricing-hero-title">Simple pricing.<br>No surprises.</h1>
+      <p class="pricing-hero-sub">One-time setup fee. Low monthly hosting. Cancel anytime.</p>
+    </div>
+  </section>
+
+  <!-- ── Pricing Cards ── -->
+  <section id="pricing">
+    <div class="pricing-grid">
+
+      <div class="price-card reveal">
+        <div class="price-tier-label">Hosting &amp; Maintenance</div>
+        <div class="price-amount">$40–$80</div>
+        <div class="price-period">per month</div>
+        <div class="price-divider"></div>
+        <ul class="price-features">
+          <li>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            Fast, reliable hosting
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            Monthly content updates
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            Security monitoring
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            We handle the tech, you focus on jobs
+          </li>
+        </ul>
+        <a href="contact.html#book" class="btn-outline btn-full" target="_blank" rel="noopener">Book a Free Call</a>
+        <!-- Replace href with Stripe payment link for Hosting & Maintenance -->
+        <a href="#" class="btn-outline btn-full btn-deposit" data-stripe-link>Pay Deposit</a>
+      </div>
+
+      <div class="price-card price-popular reveal reveal-d1">
+        <span class="popular-tag">Most Popular</span>
+        <div class="price-tier-label">Website</div>
+        <div class="price-amount">$700–$1,500</div>
+        <div class="price-period">one-time payment</div>
+        <div class="price-divider"></div>
+        <ul class="price-features">
+          <li>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            Mobile-first design
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            Click-to-call on every page
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            Google Maps &amp; SEO ready
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            Service-area pages
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            Contact form
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            Delivered in 5–10 days
+          </li>
+        </ul>
+        <a href="contact.html#book" class="btn-gold btn-full" target="_blank" rel="noopener">Book a Free Call</a>
+        <!-- Replace href with Stripe payment link for Website -->
+        <a href="#" class="btn-outline btn-full btn-deposit" data-stripe-link>Pay Deposit</a>
+      </div>
+
+      <div class="price-card reveal reveal-d2">
+        <div class="price-tier-label">Google Growth</div>
+        <div class="price-amount">$300–$500</div>
+        <div class="price-period">per month</div>
+        <div class="price-divider"></div>
+        <ul class="price-features">
+          <li>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            Google Business Profile optimization
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            Service-area page expansion
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            Local SEO — show up in Maps
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            Monthly performance report
+          </li>
+        </ul>
+        <a href="contact.html#book" class="btn-outline btn-full" target="_blank" rel="noopener">Book a Free Call</a>
+        <!-- Replace href with Stripe payment link for Google Growth -->
+        <a href="#" class="btn-outline btn-full btn-deposit" data-stripe-link>Pay Deposit</a>
+      </div>
+
+    </div>
+
+    <p class="pricing-note reveal">Deposit links go directly to our secure Stripe checkout. Remaining 50% balance invoiced on delivery.</p>
+  </section>
+
+  <!-- ── How Payment Works ── -->
+  <section id="payment">
+    <div class="section-header reveal">
+      <p class="section-label">How Payment Works</p>
+      <h2 class="section-title">Simple, secure, <em>no surprises.</em></h2>
+      <div class="divider"></div>
+    </div>
+
+    <div class="payment-steps reveal">
+
+      <div class="payment-step">
+        <div class="payment-step-num">01</div>
+        <h3>We agree on the scope</h3>
+        <p>You pick a package, we confirm the details on a quick call.</p>
+      </div>
+
+      <div class="payment-step">
+        <div class="payment-step-num">02</div>
+        <h3>You pay a 50% deposit</h3>
+        <p>Secure payment via Stripe. We start work immediately after.</p>
+      </div>
+
+      <div class="payment-step">
+        <div class="payment-step-num">03</div>
+        <h3>Final payment on delivery</h3>
+        <p>You approve the site, pay the remaining 50%, and we hand it over. Done.</p>
+      </div>
+
+    </div>
+
+    <div class="payment-methods reveal">
+      <span class="pay-badge">Visa</span>
+      <span class="pay-badge">Mastercard</span>
+      <span class="pay-badge">PayPal</span>
+      <span class="pay-badge">Bank Transfer</span>
+      <span class="pay-badge">Wise</span>
+    </div>
+
+    <p class="payment-note reveal">Payments processed securely via Stripe. We also accept direct bank transfer and Wise for international clients.</p>
+  </section>
+
+  <!-- ── Pricing FAQ ── -->
+  <section id="faq">
+    <div class="section-header reveal">
+      <p class="section-label">Questions</p>
+      <h2 class="section-title">Good questions. <em>Straight answers.</em></h2>
+      <div class="divider"></div>
+    </div>
+
+    <div class="faq-list" role="list">
+
+      <details class="faq-item reveal">
+        <summary class="faq-q">
+          Do I own my website?
+          <svg class="faq-chevron" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+        </summary>
+        <p class="faq-a">Yes, fully. Once you've paid in full, the website is yours — the code, the domain (if we registered it for you), everything. We don't hold your site hostage. If you ever want to move hosts or take over management, we hand everything over, no questions asked.</p>
+      </details>
+
+      <details class="faq-item reveal reveal-d1">
+        <summary class="faq-q">
+          How long does it take?
+          <svg class="faq-chevron" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+        </summary>
+        <p class="faq-a">5–10 business days from the moment you put down your deposit. We don't drag projects out. You'll have a site to review quickly, then we refine based on your feedback. Most clients are live in under two weeks.</p>
+      </details>
+
+      <details class="faq-item reveal reveal-d2">
+        <summary class="faq-q">
+          What if I don't like it?
+          <svg class="faq-chevron" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+        </summary>
+        <p class="faq-a">We revise until you do. Seriously. Your 50% deposit includes revision rounds — if the direction isn't right, we course-correct. The remaining 50% is only due when you're happy with the final result and ready to go live.</p>
+      </details>
+
+      <details class="faq-item reveal reveal-d1">
+        <summary class="faq-q">
+          Do you do ongoing support?
+          <svg class="faq-chevron" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+        </summary>
+        <p class="faq-a">Yes — it's included in our monthly hosting &amp; maintenance plan ($40–$80/mo). That covers fast hosting, security monitoring, and monthly content updates. Need a new service added to your site? That's covered. Want to update your phone number? Done. You message us, we handle it.</p>
+      </details>
+
+      <details class="faq-item reveal reveal-d2">
+        <summary class="faq-q">
+          Can I see examples first?
+          <svg class="faq-chevron" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+        </summary>
+        <p class="faq-a">Absolutely. We have live demo sites built specifically for HVAC and plumbing contractors — real, working websites you can click through right now. <a href="index.html#demos" style="color:var(--accent);text-decoration:none;font-weight:600;">Check the demos page</a> and see exactly what you'd get before spending a dollar.</p>
+      </details>
+
+    </div>
+  </section>
+
+  <!-- ── CTA ── -->
+  <section id="contact">
+    <div class="contact-inner reveal">
+      <p class="section-label">Ready to Start?</p>
+      <h2 class="cta-title">Book a free 15-minute call.<br><em>No pitch. No pressure.</em></h2>
+      <p class="cta-sub">We'll walk you through a demo built for your industry. You'll see exactly what your site would look like before you decide anything.</p>
+      <div class="contact-actions">
+        <a href="contact.html#book" class="btn-gold btn-big" target="_blank" rel="noopener">Book a Free Call</a>
+        <!-- PHONE: re-add tel: link here when US number is ready -->
+      </div>
+      <p class="contact-email">Or email us at <a href="mailto:hello@scapelute.com">hello@scapelute.com</a></p>
+    </div>
+  </section>
+
+  <!-- ── Footer ── -->
+  <footer>
+    <div class="footer-top">
+
+      <div class="footer-brand">
+        <a href="index.html" class="footer-logo">Scape<span>lute</span></a>
+        <p class="footer-tag">Websites for HVAC &amp; plumbing contractors. Fast, Google-ready, and built to make your phone ring.</p>
+        <!-- PHONE: re-add tel: link here when US number is ready -->
+        <a href="mailto:hello@scapelute.com" class="footer-contact-link">hello@scapelute.com</a>
+      </div>
+
+      <div class="footer-col">
+        <div class="footer-col-title">Navigate</div>
+        <ul>
+          <li><a href="index.html#demos">Demos</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="index.html#process">Process</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#contact">Book a Call</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <div class="footer-col-title">Contact</div>
+        <ul>
+          <!-- PHONE: re-add tel: link here when US number is ready -->
+          <li><a href="mailto:hello@scapelute.com">hello@scapelute.com</a></li>
+          <li><a href="contact.html#book" target="_blank" rel="noopener">Book a Free Call</a></li>
+        </ul>
+      </div>
+
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copy">&copy; 2026 Scapelute. All rights reserved.</p>
+      <p class="footer-copy">Websites for contractors who want their phone to ring.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
