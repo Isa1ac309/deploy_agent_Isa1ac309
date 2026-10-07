@@ -1,30 +1,28 @@
 #!/bin/bash
 trap_handler() {
-     echo""
-     echo" Script interrupted! Bundling current state..."
-     tar -czf " attendance_trackr_ ${input}_archive.tar.gz" "$PROJECT_DIR" 2>/dev/null
-     rm -rf "$PROJECT_DIR"
-     echo " Archive created: attendance_tracker_${input}_archive.tar.gz" 
-     echo " Incomplete directory deleted."
-     exit 1
+    echo ""
+    echo " Script interrupted! Bundling current state..."
+    if [ -d "$PROJECT_DIR" ]; then
+        zip -r "${PROJECT_DIR}_archive.zip" "$PROJECT_DIR" > /dev/null
+        rm -rf "$PROJECT_DIR"
+        echo " Archive created: ${PROJECT_DIR}_archive.zip"
+        echo " Incomplete directory deleted."
+    fi
 }
 
-trap trap_handler SIGINT
 # Ask user for project name
 read -p "Enter project name: " input
-
-# Set the main directory name
 PROJECT_DIR="attendance_tracker_${input}"
+trap trap_handler SIGINT SIGTSTP
 
 # Create the directory structure
 mkdir -p "$PROJECT_DIR/Helpers"
 mkdir -p "$PROJECT_DIR/reports"
 
 # Copy files into the correct locations
-cp attendance_checker.py "$PROJECT_DIR/"
-cp assets.csv "$PROJECT_DIR/Helpers/"
-cp config.json "$PROJECT_DIR/Helpers/"
-cp reports.log "$PROJECT_DIR/reports/"
+cp templates/attendance_checker.py "$PROJECT_DIR/"
+cp templates/assets.csv "$PROJECT_DIR/Helpers/"
+cp templates/config.json "$PROJECT_DIR/Helpers/"
 read -p "Do you want to update attendance threshold? (yes/no):" update_config
 if [ "$update_config" == "yes" ]; then
     read -p " Enter new Warning threshold (default 75): " warning
@@ -42,11 +40,11 @@ if [ "$update_config" == "yes" ]; then
 fi
 
 #Health Check - verify python is installed
-echo " Runnign health check..."
+echo " Running health check..."
 if python3 --version &>/dev/null; then
     echo " Python3 is installed: $(python3 --version)"
 else
     echo " Warning: Python is not installed. Please install it to run the application."
 fi
 
-echo "✅ Directory structure created successfully!"
+echo " Directory structure created successfully!"
