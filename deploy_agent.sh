@@ -8,6 +8,7 @@ trap_handler() {
         echo " Archive created: ${PROJECT_DIR}_archive.zip"
         echo " Incomplete directory deleted."
     fi
+    exit 1
 }
 
 # Ask user for project name
